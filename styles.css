@@ -1,16 +1,18 @@
 
-#container {
+body, html {
+    height: 100%;
+    margin: 0;
+    
+  }
+  
+  #container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1px;
-
-
-}
-.grid {
-    background-color: lightgray; /* Adjust styling as needed */
-    width: 50px; /* Adjust the width of grid items */
-    height: 50px;
-    flex-grow: 1;
- 
-
-}
+    width: 800px; /* 16 grid cells * 32px each */
+    height: 800px; /* Same as width to maintain a square container */
+  }
+  
+  .grid {
+    background-color: lightgray;
+    box-sizing: border-box; /* Ensure borders are included in the size */
+  }
